@@ -21,8 +21,11 @@ nav h1 {
     color: #f5f7e1;
     font-weight: 400;
     font-size: 25px;
+    /*----Only for <700 px screens*/
     text-transform: uppercase;
 }
+
+
 
 nav li {
     font-size: 25px;
@@ -31,12 +34,11 @@ nav li {
 }
 
 
-
 @media (min-width: 700px) {
     nav img {
         display: inline;
         width: 150px;
-        height: 150px;
+        height: 125px;
     }
 
     nav h1 {
@@ -46,5 +48,45 @@ nav li {
         font-size: 50px;
         margin-top: 50px;
         text-transform: uppercase;
+    }
+}
+
+@media (min-width:991px) and (max-width:1260px) {
+    nav li a {
+        font-size: 20px;
+        margin-right: 2px;
+        color: #f5f7e1;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    nav h1 {
+        display: inline;
+        color: #f5f7e1;
+        font-weight: 400;
+        font-size: 40px;
+        margin-top: 50px;
+        text-transform: uppercase;
+    }
+}
+
+#sample-orange {
+    background-color: #e3cb61;
+}
+
+#sample-orange p {
+    color: #f5f7e1;
+}
+
+
+/*-----------------Form-----------------*/
+.order-form-container {
+    margin: 0 auto;
+}
+
+@media (max-width:700px) {
+    .order-form-container {
+        margin: 0 auto;
+        max-width: 75%;
     }
 }

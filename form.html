@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container" id="order-form-container">
+        <form>
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6">
+                    <input type="text" placeholder="First name">
+                </div>
+                <div class="col-12 col-md-6">
+                    <input type="email" placeholder="Email Address">
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6">
+                    <h5>Occasion</h5>
+                    <input id="birthday" type="radio" name="occasion" value="birthday">
+                    <label for="birthday">Birthday</label>
+                    <br>
+                    <input id="baby" type="radio" name="occasion" value="baby">
+                    <label for="baby">Baby</label>
+                    <br>
+                    <input id="wedding" type="radio" name="occasion" value="wedding">
+                    <label for="wedding">Wedding</label>
+                    <br>
+                    <input id="other" type="radio" name="occasion" value="other">
+                    <label for="other">Other (add info below)</label>
+                    <br>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h5>Type of Cake</h5>
+                    <input id="sponge" type="radio" name="cake-type" value="sponge">
+                    <label for="sponge">Sponge Cake</label>
+                    <br>
+                    <input id="cheesecake" type="radio" name="cake-type" value="cheesecake">
+                    <label for="cheesecake">Cheesecake</label>
+                    <br>
+                    <input id="biscuit" type="radio" name="cake-type" value="biscuit">
+                    <label for="biscuit">Biscuit Cake</label>
+                    <br>
+                    <input id="other" type="radio" name="cake-type" value="other">
+                    <label for="other">Other (add info below)</label>
+                    <br>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <label for="required-date">Cake required for</label>
+                    <input type="date" class="form-control" id="required-date">
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <label for="preferences">Preferences</label>
+                    <br>
+                    <textarea id="preferences" name="preferences" rows="10" cols="70"
+                        placeholder="Please provide a description of your preferences regarding style, size, flavours etc, and any other features you would like."></textarea>
+                    <br>
+                </div>
+            </div>
+            <button></button>
+        </form>
+    </div>
+</body>
+
+</html>
